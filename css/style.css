@@ -1,0 +1,112 @@
+div.centered-wrapper {
+  text-align: center;
+  width: 960px; }
+
+h1#title {
+  text-align: center;
+  margin-top: 20px;
+  color: #e07c1f; }
+
+div#remote {
+  margin: 50px 0 50px 0;
+  display: block;
+  overflow: hidden; }
+
+div.lb-row {
+  margin: auto;
+  width: 360px; }
+
+div.lb-cell {
+  background-color: #333;
+  border: 1px solid #444;
+  width: 70px;
+  height: 70px;
+  float: left;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  color: #bbb;
+  text-align: center; }
+
+button.lb-cell {
+  cursor: default;
+  background-color: #333;
+  border-top: 2px solid #444;
+  border-right: 2px solid #444;
+  border-bottom: 2px solid #111;
+  border-left: 2px solid #111;
+  width: 70px;
+  height: 70px;
+  float: left;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  color: #bbb;
+  text-align: center;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0; }
+
+button.clickable:hover {
+  cursor: pointer; }
+
+button.clickable:active {
+  opacity: 0.85; }
+
+div#textzone {
+  margin: auto;
+  padding: 10px 0px;
+  background-color: #333;
+  width: 360px;
+  text-align: center;
+  font-family: "Helvetica";
+  font-size: 23px;
+  color: white;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px; }
+
+div.single-submit-box {
+  width: 360px;
+  margin: auto;
+  background-color: #333;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  font-family: "Helvetica";
+  font-size: 18px;
+  color: white;
+  height: 150px;
+  text-align: center; }
+  div.single-submit-box button {
+    margin-right: 2.0em;
+    float: right;
+    background-color: #e07c1f;
+    border: solid 1px #e07c1f;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    color: white; }
+  div.single-submit-box input {
+    height: 33px;
+    max-width: 100%;
+    color: #999;
+    font-size: 1.5em;
+    width: 12.0em; }
+  div.single-submit-box div.form-label {
+    padding-top: 1.0em;
+    width: auto; }
+
+.footer {
+  min-width: 850px;
+  background-color: white;
+  border-top: #eee solid 1px;
+  text-align: center;
+  font-size: 13px;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 10px;
+  width: 100%;
+  padding-bottom: 30px; }
+
+.footerContent {
+  width: 850px;
+  margin: 15px auto 10px auto; }

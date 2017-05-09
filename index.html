@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Basic Page Needs
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8">
+    <title>Livebox Remote App</title>
+    <meta name="description" content="Control your Livebox. Written in Elm">
+    <meta name="author" content="Frederic Cormier">
+
+    <!-- Mobile Specific Metas
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- FONT
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+    <!-- CSS
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="bower_components/skeleton/css/normalize.css">
+    <link rel="stylesheet" href="bower_components/skeleton/css/skeleton.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Favicon
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+
+<body>
+
+    <!-- Primary Page Layout
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <div class="container">
+        <div class="row">
+            <div class="4 columns"></div>
+                <div class="4 columns">
+                <div id="elm-app"></div>
+                </div>
+            <div class="4 columns"></div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- footer -->
+    <div class='footer'>
+        <div class='footerContent'>
+            ©Frédéric Cormier 2017 <a href="http://www.github.com/fredericcormier">- Fork Me On Github </a> - Written in <strong>Elm</strong> - <a href="http://elm-lang.org">www.elm-lang.org</a>
+            </a>
+        </div>
+    </div>
+    <!-- End Document
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <script src="js/Livebox.js"></script>
+
+    <script>
+    /* Give a default ip of 192.168.1.10
+    if nothing is in the localStorage
+    */
+        var localIPAddress = localStorage.getItem('ipAddress') || "192.168.1.10"
+
+        var node = document.getElementById('elm-app')
+        var app = Elm.Livebox.embed(node, localIPAddress);
+
+        app.ports.saveIP.subscribe(function(ipaddress) {
+            console.log('saving new ip address: ' + ipaddress)
+           localStorage.setItem('ipAddress', ipaddress)
+       });
+    </script>
+</body>
+
+</html>

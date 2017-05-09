@@ -1,0 +1,143 @@
+$cellWidth: 70px;
+$cellHeight: $cellWidth;
+$cellBorderThick: 1px;
+$rowWidth: ($cellWidth * 5) + ($cellBorderThick * 10);
+$cellBGColor: #333;
+$cellBorderColor: #444;
+$cellFontColor: #bbb;
+$mainContainerWidth: 960px;
+$remoteLRMargin: ($mainContainerWidth - $rowWidth) / 2;
+$orange: rgb(224, 124, 31);
+$green: rgb(87, 135, 8);
+div.centered-wrapper {
+    text-align: center;
+    width: $mainContainerWidth;
+}
+
+h1#title{
+        text-align: center;
+        margin-top: 20px;
+        color:$orange;
+}
+
+div#remote {
+    margin: 50px 0 50px 0;
+    display: block;
+    overflow: hidden;
+}
+
+
+div.lb-row {
+    margin: auto;
+    width: $rowWidth;
+}
+
+div.lb-cell {
+    background-color: $cellBGColor;
+    border: 1px solid $cellBorderColor;
+    width: $cellWidth;
+    height: $cellHeight;
+    float: left;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    color: $cellFontColor;
+    text-align: center;
+}
+
+button.lb-cell {
+    cursor: default;
+    background-color: $cellBGColor;
+    border-top: 2px solid #444;
+    border-right:  2px solid #444;
+    border-bottom: 2px solid #111;
+    border-left:  2px solid #111;
+    width: $cellWidth;
+    height: $cellHeight;
+    float: left;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    color: $cellFontColor;
+    text-align: center;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+}
+
+
+button.clickable:hover{
+    cursor:pointer;
+}
+
+button.clickable:active {
+    opacity: 0.85;
+}
+
+div#textzone{
+    margin:  auto;
+    padding: 10px 0px;
+    background-color: $cellBGColor;
+    width:$rowWidth;
+    text-align: center;
+    font-family: "Helvetica";
+    font-size: 23px;
+    color: white;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+
+div.single-submit-box{
+    width: $rowWidth;
+    margin: auto;
+    background-color: $cellBGColor;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    font-family: "Helvetica";
+    font-size: 18px;
+    color: white;
+    height: 150px;
+    text-align: center;
+    button{
+        margin-right: 2.0em;
+        float: right;
+        background-color: $orange;
+        border: solid 1px $orange;
+        -moz-border-radius: 0;
+        -webkit-border-radius: 0;
+        color:white;
+    }
+    input{
+        height: 33px;
+        max-width: 100%;
+        color: #999;
+        font-size: 1.5em;
+        width:12.0em;;
+    }
+    div.form-label{
+        padding-top: 1.0em;
+        width:auto;
+    }
+
+}
+
+
+.footer {
+    min-width: 850px;
+    background-color: white;
+    border-top: #eee solid 1px;
+    text-align: center;
+    font-size: 13px;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 10px;
+    width: 100%;
+    padding-bottom: 30px;
+}
+
+.footerContent {
+    width: 850px;
+    margin: 15px auto 10px auto;
+}
