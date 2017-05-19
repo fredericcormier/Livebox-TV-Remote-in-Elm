@@ -1,4 +1,4 @@
-# Livebox TV Remote
+# Livebox TV Remote/ Télécommande Livebox TV
 
 ##
 ### Written in Elm
